@@ -1,3 +1,3 @@
-## Run `yarn`
-## Run `yarn test` to run the unit tests
-## 
+Run `yarn`
+Run `yarn test` to run the unit tests
+ 
