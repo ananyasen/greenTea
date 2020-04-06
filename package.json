@@ -1,0 +1,11 @@
+{
+  "name": "greanTea",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
+}
