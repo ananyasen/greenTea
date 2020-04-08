@@ -1,4 +1,4 @@
-const {normalizeCourseName, normalizeCourseNamesList} = require("../regexpCleanse")
+const {normalizeCourseName, normalizeCourseNamesList} = require("../examples/regexpCleanse")
 
 /*
 Use Case: There are a lot of manually inputted courses. We need to clean this data to be able to process it.

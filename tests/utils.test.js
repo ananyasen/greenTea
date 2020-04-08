@@ -1,4 +1,4 @@
-const {getYearFromAbbr, getSemFromAbbr} = require('../utils/utils')
+const {getYearFromAbbr, getSemFromAbbr} = require('../examples/utils/utils')
 
 test('Parse Year From Abbr', () => {
     expect(getYearFromAbbr('2012')).toBe(2012)
