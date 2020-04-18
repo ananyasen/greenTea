@@ -19,8 +19,7 @@ function normalizeCourseName( courseInput ){
         semester: null}
 
     //trim spaces
-    courseInput = courseInput.replace(/^[\s]+/g, '')
-    courseInput = courseInput.replace(/[\s]+$/g, '')
+    courseInput = courseInput.trim()
 
     //validate string format
     //Examples: “CS111 2016 Fall” “CS-111 Su2016” “CS:3581 W 2016”

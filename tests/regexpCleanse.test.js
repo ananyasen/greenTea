@@ -69,3 +69,27 @@ test('Empty course inputs', () => {
     const normalizedList = normalizeCourseNamesList(inputs)
     expect(normalizedList.length).toBe(0)
 })
+
+test('Performance Test RexExp trim', () => {
+    /*
+    //trim spaces
+    courseInput = courseInput.replace(/^[\s]+/g, '')
+    courseInput = courseInput.replace(/[\s]+$/g, '')
+     */
+
+    let start = Date.now()
+    let regexpTestStr = "blah  "
+    for(let i=0; i<1000000; i++){
+        regexpTestStr = regexpTestStr.replace(/^[\s]+/g, '')
+        regexpTestStr = regexpTestStr.replace(/[\s]+$/g, '')
+    }
+    console.log(`$$$ RexExp trim took ${Date.now() - start} milli seconds`)
+
+    start = Date.now()
+    let test = "blah  "
+    for(let i=0; i<1000000; i++){
+        test = test.trim()
+    }
+    console.log(`$$$ String trim took ${Date.now() - start} milli seconds`)
+
+})
